@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: #ffbd90;
+  width: 100vw;
+  height: 5vh;
+  z-index: 10;
+  align-items: center;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  padding: 0 10px;
+  @media screen and (max-width: 27em) {
+    font-size: 0.7em;
+  }
+}
+
+.nav_link:hover {
+  color: black;
+}
+
+.nav_spacer {
+  flex: 3;
+}
+
+.logout {
+  background: #f0fff0;
+  border: 1px solid #dbe9db;
+  color: #ffbd90;
+  width: 128px;
+  height: 30px;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-right: 5px;
+  @media screen and (max-width: 27em) {
+    width: 64px;
+    height: 20px;
+    font-size: 0.75em;
+  }
+  border-radius: 4px;
+}
+
+.logout:enabled {
+  cursor: pointer;
+}
+
+.logout:disabled {
+  cursor: not-allowed;
+}
